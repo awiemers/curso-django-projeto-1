@@ -19,18 +19,7 @@ from django.http import HttpResponse
 from django.urls import path
 
 
-def home(request):
-    return HttpResponse('HOME')
-
-def contato(request):
-    return HttpResponse('contato')
-
-def sobre(request):
-    return HttpResponse('sobre')
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', home), #home
-    path('sobre/', sobre), #/sobre/
-    path('contato/', contato),#/contato/
+    path('admin/', admin.site.urls), 
 ]
